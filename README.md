@@ -4,7 +4,7 @@ From a tutorial at [freeCodeCamp](https://medium.freecodecamp.org/learn-bootstra
 This will be the basis for creating a WordPress theme from scratch.
 
 The site includes:
-*Navigation with soft scrolling
-*Flexbox
-*Responsive hero image
-*Sections - image grid, blog cards, and a contact form
+* Navigation with soft scrolling
+* Flexbox
+* Responsive hero image
+* Sections - image grid, blog cards, and a contact form
