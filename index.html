@@ -18,19 +18,19 @@
             <ul class="navbar-nav mr-4">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" data-value="about" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" data-value="team" href="#">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Post</a>
+                    <a class="nav-link" data-value="blog" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" data-value="contact" href="#">Contact</a>
                 </li>
             </ul>
 
@@ -46,7 +46,7 @@
             </div>
         </div>
     </header>
-    <div class="row about">
+    <div class="row about" id="about">
         <div class="col-lg-4 col-md-4 col-sm-12">
             <img src="images/eye-boots.jpg" class="img-fluid">
             <span class="text-justify">Orange you glad you have boots?</span>
@@ -58,7 +58,7 @@
     </div>
 
     <!-- portfolio -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h1 class="text-center">Portfolio</h1>
         <h3 class="text-center">...or is it bootfolio?</h3>
         <div class="container">
@@ -95,7 +95,7 @@
     </div>
 
     <!-- Posts section -->
-    <div class="blog">
+    <div class="blog" id="blog">
         <div class="container">
             <h1 class="text-center">Blog</h1>
             <div class="row">
@@ -115,9 +115,11 @@
                         <div class="card-footer">
                             <a href="" class="card-link">Read more</a>
                         </div>
-                    </div><!-- End card. -->
-                </div><!-- End this column. -->
-                
+                    </div>
+                    <!-- End card. -->
+                </div>
+                <!-- End this column. -->
+
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
                         <div class="card-img">
@@ -134,9 +136,11 @@
                         <div class="card-footer">
                             <a href="" class="card-link">Read more</a>
                         </div>
-                    </div><!-- End card. -->
-                </div><!-- End this column. -->
-                
+                    </div>
+                    <!-- End card. -->
+                </div>
+                <!-- End this column. -->
+
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
                         <div class="card-img">
@@ -153,52 +157,83 @@
                         <div class="card-footer">
                             <a href="" class="card-link">Read more</a>
                         </div>
-                    </div><!-- End card. -->
-                </div><!-- End this column. -->
-            </div><!-- End row. -->
-        </div><!-- End container. -->
-    </div><!-- End the whole blog. -->
-    
+                    </div>
+                    <!-- End card. -->
+                </div>
+                <!-- End this column. -->
+            </div>
+            <!-- End row. -->
+        </div>
+        <!-- End container. -->
+    </div>
+    <!-- End the whole blog. -->
+
     <!-- Team section -->
-    <div class="team">
+    <div class="team" id="team">
         <div class="container">
-            <h1 class="text-center">Our Team</h1>
+            <h1 class="text-center">The Bootz Team</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <img src="images/team-2.jpg" class="img-fluid" alt="team">
+                    <img src="images/toxic-boots.jpg" class="img-fluid" alt="team">
                     <div class="des">
-                        Sara
+                        Max
                     </div>
                     <span class="text-muted">Manager</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <img src="images/team-3.jpg" class="img-fluid" alt="team">
+                    <img src="images/beach-boots" class="img-fluid" alt="team">
                     <div class="des">
-                        Chris
+                        Billy
                     </div>
-                    <span class="text-muted">S.enginner</span>
+                    <span class="text-muted">Boot Engineer</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <img src="images/team-2.jpg" class="img-fluid" alt="team">
+                    <img src="images/rock-boots.jpg" class="img-fluid" alt="team">
                     <div class="des">
-                        Layla
+                        Nancy
                     </div>
-                    <span class="text-muted">Front End Developer</span>
+                    <span class="text-muted">QA Specialist</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <img src="images/team-3.jpg" class="img-fluid" alt="team">
+                    <img src="images/boot-maker" class="img-fluid" alt="team">
                     <div class="des">
-                        J.Jirard
+                        D.D. Lewis
                     </div>
-                    <span class="text-muted">Team Manger</span>
+                    <span class="text-muted">Team Builder</span>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Contact form -->
+    <div class="contact-form" id="contact">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control form-control-lg"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
     <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
     <script type="text/javascript" src='js/main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 </body>
 
 </html>
