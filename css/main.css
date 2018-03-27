@@ -12,6 +12,7 @@ a {
 
 .navbar {
     background: #F97300;
+    display: flex;
 }
 
 .nav-link,
@@ -34,6 +35,7 @@ a {
 }
 
 .navbar-toggler {
+    color: #f97300;
     background: #fff !important;
 }
 
@@ -99,20 +101,21 @@ a {
 }
 
 .about img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%
+    height: auto;
+    max-width: 90%;
+    border-radius: .3rem;
+    margin: auto;
 }
 
 .about span {
     display: block;
     color: #888;
     position: absolute;
-    left: 115px;
+    bottom: 1rem;
 }
 
 .about .desc {
-    padding: 2em;
+    padding: 1em 2em;
     border-left: 4px solid #10828C;
 }
 
@@ -123,6 +126,12 @@ a {
 .about .desc p {
     line-height: 2;
     color: #888;
+}
+
+.owner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /*Portfolio*/
@@ -145,7 +154,7 @@ a {
 .portfolio img {
     height: auto;
     width: 100%;
-    margin: 1em;
+    margin: 1em auto;
 }
 
 /* Blog */
