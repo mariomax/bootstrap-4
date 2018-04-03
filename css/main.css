@@ -207,16 +207,17 @@ a {
     background: #F97300;
     color: #fff;
     text-align: center;
-    border-bottom-left-radius: 93%;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
     transition: .3s ease-in-out;
 }
 
 .team .item:hover .des {
     height: 100%;
-    background: #f973007d;
+    background: #f974005b;
     position: absolute;
     width: 89%;
-    padding: 5em;
+    padding: 1em;
     top: 0;
     border-bottom-left-radius: 0;
 }
