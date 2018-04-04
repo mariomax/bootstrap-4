@@ -154,6 +154,7 @@ h2 {
   position: relative;
 }
 .blog .card {
+  margin-top: 2rem;
   box-shadow: 0 0 20px #CCC;
 }
 .blog .card img {
@@ -179,7 +180,7 @@ h2 {
   border-top-right-radius: .5rem;
 }
 .team .item {
-  position: relative;
+  padding-bottom: 1.5rem;
 }
 .team .des {
   background: #44231c;
@@ -188,12 +189,14 @@ h2 {
   text-align: center;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
+  padding: .3rem;
   transition: 0.3s ease-in-out;
 }
 .text-muted {
   font-family: 'Titillium Web', sans-serif;
   font-style: italic;
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 /* .team .item:hover .des {
     height: 100%;
