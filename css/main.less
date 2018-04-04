@@ -1,0 +1,256 @@
+@import 'palette.less';
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700');
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Navigation section */
+.navbar {
+    background: @color2;
+    display: flex;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: @color2;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    color: @color2;
+    background: #fff !important;
+}
+
+.bg-dark {
+    background-color: @color3!important
+}
+
+.bg-primary {
+    background-color: @color3!important
+}
+
+/* Global styles */
+h2 {
+    color: @color3;
+    font-weight: 700;
+    margin: 1em 2em;
+}
+
+/* Header section */
+
+.header {
+    background-image: url('../images/hero-boots.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.description h1 {
+    color: @color2;
+    text-align: left;
+    font-weight: 800;
+}
+
+.description p {
+    color: @color1;
+    font-size: 20px;
+    /* width: 50%; */
+    line-height: 1.5;
+}
+
+/* About section */
+
+.about {
+    margin: 2em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.about h3 {
+    margin: .25em;
+    text-align: center;
+}
+
+.about h4 {
+    color: @color2;
+    padding: .5em;
+    text-align: right;
+}
+
+.aboutDesc {
+    color: @color1;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-style: italic;
+    padding: .5em;
+}
+
+.about img {
+    height: auto;
+    max-width: 90%;
+    border-radius: .5rem;
+    margin: .5em auto;
+}
+
+.about .desc {
+    padding: 1em;
+    /* border-left: 4px solid #10828C; */
+    /* save for larger breakpoints */
+}
+
+.about .desc h3 {
+    color: @color3;
+}
+
+.about .desc p {
+    line-height: 2;
+    color: @color1;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Portfolio section */
+
+.portfolio {
+    margin: 4em 0;
+    position: relative;
+}
+
+.portfolio h3 {
+    color: @color2;
+    margin: .5em;
+}
+
+.portfolio h4 {
+    color: @color1;
+    font-style: italic;
+}
+.portfolio img {
+    border-radius: .5rem;
+    height: auto;
+    width: 100%;
+    margin: 1em auto;
+}
+
+/* Blog section */
+
+.blog {
+    margin: 4em 0;
+    position: relative;
+}
+
+.blog .card {
+    box-shadow: 0 0 20px @color0;
+}
+
+.blog .card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog .card-title {
+    color: @color2;
+}
+
+.blog .card-body {
+    padding: 1em;
+}
+
+.blog .card-text {
+    color: @color1;
+}
+
+/* Team section */
+
+.team {
+    margin: 4em 0;
+    position: relative;
+}
+
+.team img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.team .item {
+    position: relative;
+}
+
+.team .des {
+    background: @color2;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    transition: .3s ease-in-out;
+}
+
+.text-muted {
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+/* .team .item:hover .des {
+    height: 100%;
+    background: #f974005b;
+    position: absolute;
+    width: 89%;
+    padding: 1em;
+    top: 0;
+    border-bottom-left-radius: 0;
+} */
+
+@media (min-width: 993px) {
+    .description p {
+        max-width: 50%;
+    }
+    .about .desc {
+        border-left: 4px solid @color3;
+        padding: 1em;
+    }
+    
+}

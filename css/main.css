@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*
+File Name: palette.css
+Date: 4/3/2018
+Programmer: Mario LoPriore
+*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700');
 html,
 h1,
 h2,
@@ -6,213 +11,191 @@ h3,
 h4,
 h5,
 h6,
-a {
-    font-family: "Raleway";
+a,
+p {
+  font-family: 'Titillium Web', sans-serif;
 }
-
+/* Navigation section */
 .navbar {
-    background: #F97300;
-    display: flex;
+  background: #44231c;
+  display: flex;
 }
-
 .nav-link,
 .navbar-brand {
-    color: #f4f4f4;
-    cursor: pointer;
+  color: #f4f4f4;
+  cursor: pointer;
 }
-
 .nav-link {
-    margin-right: 1em !important;
+  margin-right: 1em !important;
 }
-
 .nav-link:hover {
-    background: #f4f4f4;
-    color: #f97300;
+  background: #f4f4f4;
+  color: #44231c;
 }
-
 .navbar-collapse {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .navbar-toggler {
-    color: #f97300;
-    background: #fff !important;
+  color: #44231c;
+  background: #fff !important;
 }
-
 .bg-dark {
-    background-color: #343a40!important
+  background-color: #1574BF !important;
 }
-
 .bg-primary {
-    background-color: #343a40!important
+  background-color: #1574BF !important;
 }
-
-/*header style*/
-
+/* Global styles */
+h2 {
+  color: #1574BF;
+  font-weight: 700;
+  margin: 1em 2em;
+}
+/* Header section */
 .header {
-    background-image: url('../images/hero-boot.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+  background-image: url('../images/hero-boots.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
 }
-
 .overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.7);
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.7);
 }
-
 .description {
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  margin: 0 auto;
+  padding: 2em;
 }
-
-.description h3 {
-    color: #F97300;
+.description h1 {
+  color: #44231c;
+  text-align: left;
+  font-weight: 800;
 }
-
 .description p {
-    color: #666;
-    font-size: 20px;
-    width: 50%;
-    line-height: 1.5;
+  color: #555;
+  font-size: 20px;
+  /* width: 50%; */
+  line-height: 1.5;
 }
-
-.description button {
-    border: 1px solid #F97300;
-    background: #F97300;
-    color: #fff;
-}
-
+/* About section */
 .about {
-    margin: 4em 0;
-    padding: 1em;
-    position: relative;
+  margin: 2em 0;
+  padding: 1em;
+  position: relative;
 }
-
 .about h3 {
-    color: #F97300;
-    margin: 2em;
+  margin: .25em;
+  text-align: center;
 }
-
+.about h4 {
+  color: #44231c;
+  padding: .5em;
+  text-align: right;
+}
+.aboutDesc {
+  color: #555;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-style: italic;
+  padding: .5em;
+}
 .about img {
-    height: auto;
-    max-width: 90%;
-    border-radius: .3rem;
-    margin: auto;
+  height: auto;
+  max-width: 90%;
+  border-radius: .5rem;
+  margin: .5em auto;
 }
-
-.about span {
-    display: block;
-    color: #888;
-    position: absolute;
-    bottom: 1rem;
-}
-
 .about .desc {
-    padding: 1em 2em;
-    border-left: 4px solid #10828C;
+  padding: 1em;
+  /* border-left: 4px solid #10828C; */
+  /* save for larger breakpoints */
 }
-
 .about .desc h3 {
-    color: #10828C;
+  color: #1574BF;
 }
-
 .about .desc p {
-    line-height: 2;
-    color: #888;
+  line-height: 2;
+  color: #555;
 }
-
 .owner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-/*Portfolio*/
-
+/* Portfolio section */
 .portfolio {
-    margin: 4em 0;
-    position: relative;
+  margin: 4em 0;
+  position: relative;
 }
-
-.portfolio h1 {
-    color: #F97300;
-    margin: 1em;
-}
-
 .portfolio h3 {
-    color: #F97300;
-    margin: .5em;
+  color: #44231c;
+  margin: .5em;
 }
-
+.portfolio h4 {
+  color: #555;
+  font-style: italic;
+}
 .portfolio img {
-    height: auto;
-    width: 100%;
-    margin: 1em auto;
+  border-radius: .5rem;
+  height: auto;
+  width: 100%;
+  margin: 1em auto;
 }
-
-/* Blog */
-
+/* Blog section */
 .blog {
-    margin: 4em 0;
-    position: relative;
+  margin: 4em 0;
+  position: relative;
 }
-
-.blog h1 {
-    color: #F97300;
-    margin: 2em;
-}
-
 .blog .card {
-    box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #CCC;
 }
-
 .blog .card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 .blog .card-title {
-    color: #F97300;
-
+  color: #44231c;
 }
-
 .blog .card-body {
-    padding: 1em;
+  padding: 1em;
 }
-
+.blog .card-text {
+  color: #555;
+}
 /* Team section */
-
 .team {
-    margin: 4em 0;
-    position: relative;
+  margin: 4em 0;
+  position: relative;
 }
-
-.team h1 {
-    color: #F97300;
-    margin: 2em;
+.team img {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
-
 .team .item {
-    position: relative;
+  position: relative;
 }
-
 .team .des {
-    background: #F97300;
-    color: #fff;
-    text-align: center;
-    border-bottom-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    transition: .3s ease-in-out;
+  background: #44231c;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  transition: 0.3s ease-in-out;
 }
-
-.team .item:hover .des {
+.text-muted {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+/* .team .item:hover .des {
     height: 100%;
     background: #f974005b;
     position: absolute;
@@ -220,29 +203,13 @@ a {
     padding: 1em;
     top: 0;
     border-bottom-left-radius: 0;
-}
-
-.contact-form {
-    margin: 6em 0;
-    position: relative;
-}
-
-.contact-form h1 {
-    padding: 2em 1px;
-    color: #F97300;
-}
-
-.contact-form .right {
-    max-width: 600px;
-}
-
-.contact-form .right .btn-secondary {
-    background: #F97300;
-    color: #fff;
-    border: 0;
-}
-
-.contact-form .right .form-control::placeholder {
-    color: #888;
-    font-size: 16px;
+} */
+@media (min-width: 993px) {
+  .description p {
+    max-width: 50%;
+  }
+  .about .desc {
+    border-left: 4px solid #1574BF;
+    padding: 1em;
+  }
 }
