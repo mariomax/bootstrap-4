@@ -3,7 +3,19 @@ File Name: palette.css
 Date: 4/3/2018
 Programmer: Mario LoPriore
 */
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700');
+/* Global styles */
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700");
+body {
+  margin: 0;
+}
+h2 {
+  color: #1574BF;
+  font-weight: 700;
+  margin: 1em 0.5rem;
+}
+h3 {
+  color: #040404;
+}
 html,
 h1,
 h2,
@@ -13,47 +25,50 @@ h5,
 h6,
 a,
 p {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 /* Navigation section */
 .navbar {
   background: #44231c;
   display: flex;
-}
-.nav-link,
-.navbar-brand {
+  padding: 1rem;
   color: #f4f4f4;
-  cursor: pointer;
 }
-.nav-link {
-  margin-right: 1em !important;
+.navbar-items,
+.navbar {
+  flex-direction: column;
 }
-.nav-link:hover {
-  background: #f4f4f4;
-  color: #44231c;
+.navbar-items {
+  display: none;
+}
+.navbar-link-brand,
+.navbar-toggleShow {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+}
+.navbar-link-toggle {
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+}
+.navbar-toggleShow {
+  display: flex;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 0.5rem 1rem;
 }
 .navbar-collapse {
   justify-content: flex-end;
 }
-.navbar-toggler {
-  color: #44231c;
-  background: #fff !important;
-}
-.bg-dark {
-  background-color: #1574BF !important;
-}
-.bg-primary {
-  background-color: #1574BF !important;
-}
-/* Global styles */
-h2 {
-  color: #1574BF;
-  font-weight: 700;
-  margin: 1em 2em;
+.navbar-link-toggle {
+  color: #f4f4f4;
 }
 /* Header section */
 .header {
-  background-image: url('../images/hero-boots.jpg');
+  background-image: url("../images/hero-boots.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: right;
@@ -63,54 +78,55 @@ h2 {
   min-height: 100%;
   min-width: 100%;
   left: 0;
-  top: 0;
+  top: 4.5rem;
   background: rgba(244, 244, 244, 0.7);
 }
 .description {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 20%;
   margin: 0 auto;
   padding: 2em;
 }
 .description h1 {
+  font-size: 2rem;
   color: #44231c;
-  text-align: left;
+  margin-bottom: 0.8rem;
+  text-align: center;
   font-weight: 800;
 }
 .description p {
   color: #555;
-  font-size: 20px;
+  font-size: 1.1rem;
   /* width: 50%; */
   line-height: 1.5;
 }
 /* About section */
 .about {
-  margin: 2em 0;
-  padding: 1em;
+  padding: 5rem 1rem 0 1rem;
   position: relative;
 }
 .about h3 {
-  margin: .25em;
+  margin: 0.25em;
   text-align: center;
 }
 .about h4 {
   color: #44231c;
-  padding: .5em;
+  padding: 0.5em;
   text-align: right;
 }
 .aboutDesc {
   color: #555;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
   font-style: italic;
-  padding: .5em;
+  padding: 0.5em;
 }
 .about img {
   height: auto;
   max-width: 90%;
-  border-radius: .5rem;
-  margin: .5em auto;
+  border-radius: 0.5rem;
+  margin: 0.5em auto;
 }
 .about .desc {
   padding: 1em;
@@ -123,6 +139,7 @@ h2 {
 .about .desc p {
   line-height: 2;
   color: #555;
+  padding: 0.5rem 1rem;
 }
 .owner {
   display: flex;
@@ -131,26 +148,26 @@ h2 {
 }
 /* Portfolio section */
 .portfolio {
-  margin: 4em 0;
+  padding: 4.5rem 1rem 0 1rem;
   position: relative;
 }
 .portfolio h3 {
   color: #44231c;
-  margin: .5em;
+  margin: 0.5em;
 }
 .portfolio h4 {
   color: #555;
   font-style: italic;
 }
 .portfolio img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   height: auto;
   width: 100%;
   margin: 1em auto;
 }
 /* Blog section */
 .blog {
-  margin: 4em 0;
+  padding: 4.5rem 1rem 0 1rem;
   position: relative;
 }
 .blog .card {
@@ -172,12 +189,12 @@ h2 {
 }
 /* Team section */
 .team {
-  margin: 4em 0;
+  padding: 4.5rem 1rem 0 1rem;
   position: relative;
 }
 .team img {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .team .item {
   padding-bottom: 1.5rem;
@@ -185,29 +202,60 @@ h2 {
 .team .des {
   background: #44231c;
   color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  padding: .3rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.3rem;
   transition: 0.3s ease-in-out;
 }
 .text-muted {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-style: italic;
   text-align: center;
   padding-bottom: 1.5rem;
 }
-/* .team .item:hover .des {
-    height: 100%;
-    background: #f974005b;
-    position: absolute;
-    width: 89%;
-    padding: 1em;
-    top: 0;
-    border-bottom-left-radius: 0;
-} */
-@media (min-width: 993px) {
+/* Footer section */
+footer {
+  background: #040404;
+}
+footer h3,
+footer p {
+  color: #f4f4f4;
+  padding: 0.1rem 0.5rem;
+  text-align: center;
+}
+footer h4 {
+  color: #f4f4f4;
+  text-align: center;
+}
+footer .svg-inline--fa {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 3rem;
+}
+/*
+
+#       #  #####  ####    #    #
+##     ##  #      #   #   #   # #
+# #   # #  #####  #    #  #  #####
+#  # #  #  #      #   #   #  #   #
+#   #   #  #####  ####    #  #   #
+
+*/
+@media (min-width: 768px) {
+  .navbar-link-toggle {
+    display: none;
+  }
+  .navbar-items,
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-item {
+    display: flex;
+    padding-right: 1rem;
+  }
   .description p {
     max-width: 50%;
   }

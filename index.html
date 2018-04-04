@@ -4,63 +4,73 @@
 <head>
     <title>Bootstrap 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="styesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- <link rel="styesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">X</span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-4">
-                <li class="nav-item">
-                    <a class="nav-link" data-value="about" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-value="team" href="#">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-value="blog" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-value="contact" href="#">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar collapse sticky-top d-flex" role="navigation">
+        <a class="nav-link navbar-link-brand" href="#">Home</a>
+        <div class="nav-link navbar-link-toggle">
+            <i class="fas fa-bars"></i>
         </div>
+        <ul class="navbar-nav navbar-items">
+            <li class="nav-item">
+                <a class="nav-link" data-value="about" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-value="blog" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-value="team" href="#">Team</a>
+            </li>
+        </ul>
     </nav>
+
+    <!-- Header section -->
     <header class="header">
         <div class="overlay"></div>
         <div class="container">
             <div class="description">
                 <h1>Boot Company "X"</h1>
-                <h3>Hello, Welcome To Our New Site!</h3>
-                <p>Please excuse the mess. We're building a new site template using Bootstrap 4, Flexbox, &amp; jQuery. These boots are made from coding.</p>
+                <h3>Hello,
+                    <br />Welcome To Our Site!</h3>
+                <p>Please excuse the mess. This is a new dev template for a portfolio site using Bootstrap 4, Flexbox, &amp;
+                    jQuery with HTML5 &amp; CSS/LESS... best practices.</p>
+                <p>These boots are made from coding.</p>
             </div>
         </div>
     </header>
+
     <!-- About & Description section -->
-    <div class="about row" id="about">
+    <section class="about row" id="about">
         <div class="offset-lg-1 col-lg-3 col-md-5 col-sm-12 owner">
             <img src="images/boot-details.jpg">
             <span class="aboutDesc">High quality details</span>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 desc">
-            <h3>About Boot (and Web) Design:</h3>
-            <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>About Boot (&amp; Web) Design:</h3>
+            <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h4>- Boot Co. "X"</h4>
         </div>
-    </div>
+    </section>
 
     <!-- Portfolio -->
-    <div class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="text-center">Portfolio</h2>
         <h4 class="text-center">...or is it bootfolio?</h4>
         <div class="container">
@@ -94,10 +104,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Posts section -->
-    <div class="blog" id="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <h2 class="text-center">Blog</h2>
             <div class="row">
@@ -108,9 +118,9 @@
                         </div>
 
                         <div class="card-body">
-                            <h4 class="card-title">Post Title</h4>
+                            <h4 class="card-title">Work Boots</h4>
                             <p class="card-text">
-                                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas sed lorem a felis quis lobortis diam.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -127,9 +137,9 @@
                             <img src="images/boot-blog2.jpg" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Post Title</h4>
+                            <h4 class="card-title">Hiking Boots</h4>
                             <p class="card-text">
-                                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Proin feugiat tellus eget augue rutrum, at euismod velit placerat. Integer egestas augue quis orci sagittis ornare.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -147,9 +157,9 @@
                         </div>
 
                         <div class="card-body">
-                            <h4 class="card-title">Post Title</h4>
+                            <h4 class="card-title">Designer Boots</h4>
                             <p class="card-text">
-                                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Curabitur commodo finibus dapibus. Sed finibus, tellus nec cursus, ex metus, nec rhoncus lectus urna suscipit elit.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -163,36 +173,36 @@
             <!-- End row. -->
         </div>
         <!-- End container. -->
-    </div>
+    </section>
     <!-- End the whole blog. -->
 
     <!-- Team section -->
-    <div class="team" id="team">
+    <section class="team" id="team">
         <div class="container">
             <h2 class="text-center">The Bootstrap Team</h2>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 item">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 item">
                     <img src="images/toxic-boots.jpg" class="img-fluid" alt="team">
                     <div class="des">
                         Max Glover
                     </div>
                     <span class="text-muted">Team Manager</span>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 item">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 item">
                     <img src="images/boot-maker.jpg" class="img-fluid" alt="team">
                     <div class="des">
                         D.D. Lewis
                     </div>
                     <span class="text-muted">Team Builder</span>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 item">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 item">
                     <img src="images/test-boots.jpg" class="img-fluid" alt="team">
                     <div class="des">
                         Mary Gardener
                     </div>
                     <span class="text-muted">QA Specialist</span>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 item">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 item">
                     <img src="images/beach-boots.jpg" class="img-fluid" alt="team">
                     <div class="des">
                         Billy Beachman
@@ -201,7 +211,24 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer class="footer contact row" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                <h3>Contact Info:</h3>
+                <p>234-567-8910</p>
+                <p>P.O. Box 11483
+                    <br> Portland, OR 97211</p>
+                </div>
+                <div class="col-4">
+                    <h3>Social Media</h3>
+                    <h4><i class="fab fa-instagram"></i><i class="fab fa-facebook-square"></i></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
