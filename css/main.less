@@ -39,14 +39,14 @@ p {
 .navbar-items,
 .navbar {
   flex-direction: column;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-items {
   display: none;
 }
 
-.navbar-link-brand,
-.navbar-toggleShow {
+.navbar-link-brand {
   align-self: flex-start;
   padding: 0.5rem 1rem;
 }
@@ -55,27 +55,41 @@ p {
   align-self: flex-end;
   display: initial;
   position: absolute;
+  color: @colorWhite;
+
 }
 
-.navbar-toggleShow {
-  display: flex;
-}
-
-a,
-a:hover {
+.navbar a,
+.navbar a:hover {
   text-decoration: none;
   color: @colorWhite;
-  padding: 0.5rem 1rem;
+  // padding: 0.5rem 1rem;
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
+.nav-item .nav-link a {
+  padding: 0;
 }
 
-.navbar-link-toggle {
-  // display: flex;
-  color: @colorWhite;
-  // background: #fff !important;
+// jQuery CSS for navigation dropdown open/close
+.navbar-items.open { 
+  height: auto; 
+  display: flex;
+  align-self: flex-start;
+  padding: 0 1rem;
+}
+
+.navbar-items.open li { 
+  display: block; 
+  padding-top: .5rem;
+}
+
+.navbar-items.close { 
+  height: 0; 
+  padding-top: 0;
+}
+
+.navbar-items.close li { 
+  display: none; 
 }
 
 /* Header section */
@@ -91,7 +105,7 @@ a:hover {
   min-height: 100%;
   min-width: 100%;
   left: 0;
-  top: 4.5rem;
+  // top: 3.5rem; // Push overlay down by height of sticky nav.
   background: rgba(244, 244, 244, 0.7);
 }
 
@@ -147,7 +161,7 @@ a:hover {
   height: auto;
   max-width: 90%;
   border-radius: 0.5rem;
-  margin: 0.5em auto;
+  margin: 1rem auto;
 }
 
 .about .desc {
@@ -175,7 +189,7 @@ a:hover {
 /* Portfolio section */
 .portfolio {
   // margin: 4em 0;
-  padding: 4.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   position: relative;
 }
 
@@ -198,7 +212,7 @@ a:hover {
 /* Blog section */
 .blog {
   // margin: 4em 0;
-  padding: 4.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   position: relative;
 }
 
@@ -224,10 +238,17 @@ a:hover {
   color: @color1;
 }
 
+.blog .card-link {
+  color: @color3;
+  &:hover {
+    color: @colorBlack;
+  }
+}
+
 /* Team section */
 .team {
   // margin: 4em 0;
-  padding: 4.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   position: relative;
 }
 
@@ -301,8 +322,16 @@ footer {
 
   .nav-item {
     display: flex;
-    padding-right: 1rem;
+    padding: 0 1rem;
   }
+
+  .nav-link {
+    padding: 0;
+  } // Removes padding from their div.
+
+  .navbar-link-brand {
+    padding: 0.5rem 1rem;
+  } // Restores padding to this one item.
 
   .description p {
     max-width: 50%;

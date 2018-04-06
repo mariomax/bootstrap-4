@@ -37,12 +37,12 @@ p {
 .navbar-items,
 .navbar {
   flex-direction: column;
+  padding: 0.5rem 1rem;
 }
 .navbar-items {
   display: none;
 }
-.navbar-link-brand,
-.navbar-toggleShow {
+.navbar-link-brand {
   align-self: flex-start;
   padding: 0.5rem 1rem;
 }
@@ -50,21 +50,32 @@ p {
   align-self: flex-end;
   display: initial;
   position: absolute;
+  color: #f4f4f4;
 }
-.navbar-toggleShow {
-  display: flex;
-}
-a,
-a:hover {
+.navbar a,
+.navbar a:hover {
   text-decoration: none;
   color: #f4f4f4;
-  padding: 0.5rem 1rem;
 }
-.navbar-collapse {
-  justify-content: flex-end;
+.nav-item .nav-link a {
+  padding: 0;
 }
-.navbar-link-toggle {
-  color: #f4f4f4;
+.navbar-items.open {
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  padding: 0 1rem;
+}
+.navbar-items.open li {
+  display: block;
+  padding-top: .5rem;
+}
+.navbar-items.close {
+  height: 0;
+  padding-top: 0;
+}
+.navbar-items.close li {
+  display: none;
 }
 /* Header section */
 .header {
@@ -78,7 +89,6 @@ a:hover {
   min-height: 100%;
   min-width: 100%;
   left: 0;
-  top: 4.5rem;
   background: rgba(244, 244, 244, 0.7);
 }
 .description {
@@ -126,7 +136,7 @@ a:hover {
   height: auto;
   max-width: 90%;
   border-radius: 0.5rem;
-  margin: 0.5em auto;
+  margin: 1rem auto;
 }
 .about .desc {
   padding: 1em;
@@ -148,7 +158,7 @@ a:hover {
 }
 /* Portfolio section */
 .portfolio {
-  padding: 4.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   position: relative;
 }
 .portfolio h3 {
@@ -167,7 +177,7 @@ a:hover {
 }
 /* Blog section */
 .blog {
-  padding: 4.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   position: relative;
 }
 .blog .card {
@@ -187,9 +197,15 @@ a:hover {
 .blog .card-text {
   color: #555;
 }
+.blog .card-link {
+  color: #1574BF;
+}
+.blog .card-link:hover {
+  color: #040404;
+}
 /* Team section */
 .team {
-  padding: 4.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   position: relative;
 }
 .team img {
@@ -254,7 +270,13 @@ footer .svg-inline--fa {
   }
   .nav-item {
     display: flex;
-    padding-right: 1rem;
+    padding: 0 1rem;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  .navbar-link-brand {
+    padding: 0.5rem 1rem;
   }
   .description p {
     max-width: 50%;
