@@ -40,6 +40,7 @@ p {
   display: flex;
   padding: 1rem;
   color: #f4f4f4;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
 .navbar-items,
 .navbar {
@@ -85,10 +86,11 @@ p {
   display: none;
 }
 /* Header section */
-.header {
+header {
   background-image: url("../images/hero-boots.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: right;
 }
 .overlay {
@@ -281,6 +283,11 @@ footer .icon a:hover {
 #   #   #  #####  ####    #  #   #
 
 */
+@media (min-width: 576px) {
+  header {
+    background-attachment: fixed;
+  }
+}
 @media (min-width: 768px) {
   .navbar-link-toggle {
     display: none;
